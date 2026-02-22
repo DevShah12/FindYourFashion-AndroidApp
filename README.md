@@ -26,8 +26,8 @@ It demonstrates structured navigation, multi-screen activities, product browsing
 3. Add Internet permission in `AndroidManifest.xml`
 4. Run on emulator or device
 
-## 📷 Screenshots
-*Add a few screenshots of key screens here to showcase UI.*
+## 🎥 Demo Video
+[Watch Demo](https://drive.google.com/file/d/1UqHF_ef_rz_KxSNURB5ArxphoVHD5Klq/view?usp=share_link)
 
 ## 📈 Next Steps
 - Integrate REST APIs for login and product data
