@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            app:title="Place Order"
+            app:titleTextColor="#1C1C1E"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        <TextView
+            android:id="@+id/orderSummaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Summary"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/playfair_display" />
+
+        <TextView
+            android:id="@+id/userDetailsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Info"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/playfair_display" />
+
+        <Button
+            android:id="@+id/confirmOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4081"
+            android:layout_marginTop="32dp"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/playfair_display" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,113 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F9F9">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Product Detail"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+    <ImageView
+        android:id="@+id/wishlistIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_heart_outline"
+        android:contentDescription="Wishlist Icon" />
+
+
+    <!-- Scrollable content takes remaining space -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/detailProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/detailProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:fontFamily="@font/playfair_display"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/detailProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="18sp"
+                android:textColor="#FF4081"
+                android:fontFamily="@font/playfair_display"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/detailProductDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a great product made from high-quality materials."
+                android:textSize="16sp"
+                android:textColor="#555"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/playfair_display" />
+
+            <!-- Two buttons side-by-side -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/addToCartButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:backgroundTint="#212121"
+                    android:textColor="#FFFFFF"
+                    android:padding="14dp"
+                    android:fontFamily="@font/playfair_display"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/buyNowButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Now"
+                    android:backgroundTint="#FF4081"
+                    android:textColor="#FFFFFF"
+                    android:padding="14dp"
+                    android:fontFamily="@font/playfair_display"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
